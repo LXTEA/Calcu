@@ -33,7 +33,7 @@ public class Main {
                 break;
             case "/" : sum = a / b;
                 break;
-            default:  System.out.println("Ошибка! Введите корректный знак");
+            default:  throw new IOException("Ошибка! Введите корректный знак");
         }
         return String.valueOf(sum);
     }
